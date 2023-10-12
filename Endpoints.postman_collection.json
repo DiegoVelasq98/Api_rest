@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "a1a46910-7078-4cb9-b82b-2f2e92b9c3cc",
+		"name": "Endpoints",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30384426"
+	},
+	"item": [
+		{
+			"name": "Consulta Clientes",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7262/api/Clientes",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7262",
+					"path": [
+						"api",
+						"Clientes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Insertar Clientes",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"id\": 2,\r\n        \"nombres\": \"Fernando\",\r\n        \"apellidos\": \"Velasquez\",\r\n        \"direccion\": \"Guatemala\",\r\n        \"telefono\": \"41161331\",\r\n        \"fecha_nacimiento\": \"1998-11-20\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7262/api/Clientes",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7262",
+					"path": [
+						"api",
+						"Clientes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar Clientes",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 2,\r\n    \"nombres\": \"Daniela\",\r\n    \"apellidos\": \"Chavarria\",\r\n    \"direccion\": \"Guatemala\",\r\n    \"telefono\": \"34591433\",\r\n    \"fecha_nacimiento\": \"1998-10-04\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7262/api/Clientes/2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7262",
+					"path": [
+						"api",
+						"Clientes",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Borrar Clientes",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7262/api/Clientes/2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7262",
+					"path": [
+						"api",
+						"Clientes",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
